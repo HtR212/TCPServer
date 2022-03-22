@@ -4,6 +4,7 @@ import socket
 import sys
 import select
 import queue
+import os
 
 from file_reader import FileReader
 
@@ -223,8 +224,11 @@ class Jewel:
 
 
 if __name__ == "__main__":
-    port = int(sys.argv[1])
-    file_path = sys.argv[2]
+    # port = int(sys.argv[1])
+    # file_path = sys.argv[2]
+
+    port = os.environ.get('PORT')
+    file_path = sys.argv[1]
 
     FR = FileReader()
     print(port, file_path)
