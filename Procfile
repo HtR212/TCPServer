@@ -1,1 +1,2 @@
-web: python jewel.py ./files
+web: python jewel.py
+worker: python jewel.py

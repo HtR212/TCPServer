@@ -228,7 +228,7 @@ if __name__ == "__main__":
     # file_path = sys.argv[2]
 
     port = os.environ.get('PORT')
-    file_path = sys.argv[1]
+    file_path = "./files"
 
     FR = FileReader()
     print(port, file_path)
